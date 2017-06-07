@@ -5,12 +5,11 @@ import MainSection from './components/MainSection';
 import Slider from './components/Slider';
 import Footer from './components/Footer';
 
-
 import '../sass/index.scss';
 
 export default function App() {
   return (
-    <div className="container">
+    <div>
       <NavBar />
       <Jumbotron />
       <MainSection />
