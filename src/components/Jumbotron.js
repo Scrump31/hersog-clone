@@ -3,8 +3,11 @@ import React from 'react';
 
 export default function Jumbotron() {
   return (
-    <div className="container">
-      <h1>Jumbotron</h1>
+    <div className="jumbo-wrapper">
+      <div>
+        <div className="jumbo-hersog">HERSOG</div>
+        <div className="jumbo-architects">ARCHITECTS & ASSOCIATES</div>
+      </div>
     </div>
   );
 }
