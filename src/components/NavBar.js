@@ -12,8 +12,8 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <div className="nav-wrapper">
-        <div className="container">
+      <div className="nav-wrapper container">
+        <div>
           <div className="logo">HERSOG</div>
           <button onClick={this.toggleNav} className="dropbtn ">
             <i className="fa fa-bars" aria-hidden="true" />
@@ -30,9 +30,9 @@ export default class NavBar extends Component {
           </ul>
         </div>
 
-        <div className="nav-searchbar">
-          <input placeholder="SEARCH" /><i className="fa fa-search" aria-hidden="true" />
-        </div>
+        <form className="nav-searchbar">
+          <input type="text" placeholder="SEARCH" />
+        </form>
       </div>
     );
   }

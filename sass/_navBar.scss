@@ -1,47 +1,103 @@
+.nav-wrapper {
+  @media (min-width: 1024px) {
+    display: flex;
+    height: 75px;
+  }
+}
+
 .logo {
   background: $primary-blue;
   color: $white;
   display: inline-block;
   font-size: 1.5rem;
   padding: .5rem 1rem;
+  @media (min-width: 1024px) {
+    height: 100%;
+    text-align: center;
+    width: 176px;
+  }
+
+}
+
+.dropdown {
+  @media (min-width: 1024px) {
+    width: 66%;
+  }
 }
 
 .dropbtn {
   float: right;
   font-size: 2rem;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 
 }
 
 ul {
-  background: $off-white;
   display: none;
   left: 0;
   list-style: none;
   padding: 2%;
   right: 0;
 
-  @media (min-width: 768px) {
-    display: block;
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
   }
 
 
   li {
-    background: $black;
     border: 2px solid $off-white;
     font-size: 1.5em;
     text-align: center;
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       border: 0;
-      display: inline-block;
+      &:not(:first-child)::before {
+        color: $lightgray;
+        content: '~ ';
+        font-size: 1rem;
+        margin: 0 15px;
+      }
+
     }
   }
 
   a {
-    color: $off-white;
+    color: $black;
     text-decoration: none;
+    @media (min-width: 1024px) {
+      font-size: .8rem;
+      font-weight: 600;
+  }
+  }
+}
+
+.nav-searchbar {
+  color: $lightgray;
+  display: none;
+  @media (min-width: 1024px) {
+    display: inline-block;
+    padding-top: 1.3%;
+    width: 19%;
+
+    input {
+      background-image: url('/src/img/search-icon.png');
+      background-position: 99% 40%;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      font-size: .9rem;
+      padding: 5%;
+      padding-right: 12%;
+      width: 100%;
+    }
+
+    .fa-search {
+      position: absolute;
+      right: 47px;
+      top: 25px;
+    }
   }
 }
 

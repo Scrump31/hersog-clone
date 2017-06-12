@@ -11,12 +11,14 @@ export default function App() {
   return (
     <div>
       <NavBar />
-      <div className="container">
-        <Jumbotron />
-        <MainSection />
-        <Slider />
+      <div className="body-wrapper">
+        <div className="container">
+          <Jumbotron />
+          <MainSection />
+          <Slider />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
