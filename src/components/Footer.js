@@ -1,6 +1,4 @@
 import React from 'react';
-// import '../sass/index.scss';
-
 
 export default function Footer() {
   return (
@@ -10,7 +8,6 @@ export default function Footer() {
           <div className="logo">HERSOG</div>
         </div>
       </div>
-
       <div>
         <ul className="footer-nav">
           <li><a href="">ABOUT US</a></li>
@@ -20,7 +17,6 @@ export default function Footer() {
           <li><a href="">CAREERS</a></li>
         </ul>
       </div>
-
     </footer>
   );
 }
