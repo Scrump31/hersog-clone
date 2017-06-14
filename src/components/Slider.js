@@ -9,16 +9,16 @@ export default function Slider() {
       infiniteLoop
       showStatus={false}
       showThumbs={false}
-      className="col-"
+      className="col-slider"
     >
       <div>
-        <img src={'http://lorempixel.com/1200/540/sports/1/'} alt={'1'} />
+        <img src={'http://lorempixel.com/1200/540/city/1/'} alt={'1'} />
       </div>
       <div>
-        <img src={'http://lorempixel.com/1200/540/sports/2/'} alt={'2'} />
+        <img src={'http://lorempixel.com/1200/540/city/2/'} alt={'2'} />
       </div>
       <div>
-        <img src={'http://lorempixel.com/1200/540/sports/3/'} alt={'3'} />
+        <img src={'http://lorempixel.com/1200/540/city/3/'} alt={'3'} />
       </div>
     </Carousel>
   );

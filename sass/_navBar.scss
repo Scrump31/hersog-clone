@@ -7,6 +7,7 @@
 
 .logo {
   background: $primary-blue;
+  box-shadow: $nav-logo-shadow;
   color: $white;
   display: inline-block;
   font-size: 1.5rem;
@@ -26,8 +27,10 @@
 }
 
 .dropbtn {
+  box-shadow: $burger-nav-shadow;
   float: right;
   font-size: 2rem;
+  margin-top: 15px;
   @media (min-width: 1024px) {
     display: none;
   }

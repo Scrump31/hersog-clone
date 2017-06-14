@@ -8,11 +8,12 @@
     margin-bottom: 13%;
     padding: 2rem 0;
   }
-
 }
 
 .jumbo-hersog {
-  border: 1px solid;
+  background: $jumbo-hersog-bg;
+  border: 1px solid $off-white;
+  color: $off-white;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: .1em;
@@ -20,7 +21,6 @@
   @media only screen and (min-width: 768px) {
     font-size: 7rem;
   }
-
 }
 
 .jumbo-architects {
@@ -31,7 +31,6 @@
   letter-spacing: .2em;
   padding: .3rem;
   position: relative;
-
   top: -12px;
   width: 70%;
   @media only screen and (min-width: 768px) {
@@ -39,5 +38,4 @@
     top: -40px;
     width: initial;
   }
-
 }
