@@ -13,11 +13,160 @@ img {
   width: 100%;
 }
 
+.col-founder {
+  div {
+    &:nth-child(2) {
+      background: $gold;
+      color: $white;
+      font-family: sans-serif;
+      font-size: 2rem;
+      margin-top: -5px;
+      padding: 6%;
+      padding-left: 10%;
+    }
+
+    &:nth-child(5) {
+      background: $lightgray;
+      color: $white;
+      display: flex;
+      padding: 8% 13% 6.5% 0;
+
+      .fa-chevron-right {
+        background: $gold;
+        padding: 5%;
+      }
+
+      span {
+        &:first-of-type + span {
+          background: lighten($gold, 7%);
+          font-family: sans-serif;
+          font-size: 15px;
+          padding: 5%;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  span {
+    display: block;
+  }
+
+  p {
+    background: $white;
+    margin: 0;
+    padding: 10%;
+    padding-top: 20%;
+
+    &:first-of-type + p {
+      padding-top: 0;
+    }
+
+    span {
+      font-size: 2rem;
+      padding: 12% 0 28.5%;
+    }
+  }
+
+}
+
+.main-card {
+  div {
+    background: $white;
+    margin-top: -5px;
+    padding: 3%;
+    padding-bottom: 8%;
+
+    .architecture-category {
+      color: $architecture-category;
+    }
+
+    .interior-category {
+      color: $interior-category;
+    }
+
+    .landscape-category {
+      color: $landscape-category;
+    }
+
+    .category-type {
+      font-family: sans-serif;
+      font-size: 1.5em;
+      @media (min-width: 1024px) {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .learn-more {
+    background: $main-learn-more;
+    border: 1px solid $white;
+    border-top: 0;
+    display: flex;
+    padding: 7%;
+
+    div {
+      background: $main-learn-more;
+      color: $white;
+      width: 42%;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  p {
+    margin: 4%;
+  }
+
+}
+
 .community-text {
+  color: $white;
+
+  div {
+    &:nth-child(1) {
+      font-size: .9rem;
+    }
+
+    &:nth-child(3) {
+      font-size: 1.5rem;
+    }
+  }
   @media only screen and (min-width: 768px) {
     border: 1px solid;
     border-right: 0;
     padding: 3% 8% 1% 4%;
     width: 68%;
+
+  }
+
+  .fa-chevron-right {
+    background: $community-text-btn;
+    margin-top: 10%;
+    padding: 5%;
   }
 }
+
+// // Fix this Full Article Button
+// .full-article-btn {
+//   background: $lightgray;
+//   color: $white;
+//   display: flex;
+//   padding: 8% 13% 6.5% 0;
+//   .fa-chevron-right {
+//     background: $gold;
+//     padding: 5%;
+//   }
+//   .full-article {
+//     background: lighten($gold, 7%);
+//     font-family: sans-serif;
+//     font-size: 15px;
+//     padding: 5%;
+//   }
+// }
