@@ -60,5 +60,8 @@ module.exports = {
       template: 'src/index.html',
     }),
     extractSass,
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    }),
   ],
 };
