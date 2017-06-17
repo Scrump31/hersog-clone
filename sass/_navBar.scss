@@ -1,3 +1,4 @@
+
 .nav-wrapper {
   @media (min-width: 1024px) {
     display: flex;
@@ -90,7 +91,7 @@
     width: 19%;
 
     input {
-      background-image: url('/src/img/search-icon.png');
+      background-image: url('../src/img/searchIcon.png');
       background-position: 99% 40%;
       background-repeat: no-repeat;
       background-size: 30px;

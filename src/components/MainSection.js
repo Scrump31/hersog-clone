@@ -1,10 +1,16 @@
 import React from 'react';
+import hersogFounder from '../img/hersogFounder.png';
+import architecture from '../img/architecture.png';
+import learnMoreIcon from '../img/learnMoreIcon.png';
+import interior from '../img/interior.png';
+import landscape from '../img/landscape.png';
+import communityCenter from '../img/communityCenter.png';
 
 export default function MainSection() {
   return (
     <div>
       <div className="col-founder">
-        <img src={'src/img/hersog_founder.png'} alt={'hersog_founder'} />
+        <img src={hersogFounder} alt={'hersog_founder'} />
         <div><span>LIVE</span>BETTER.</div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do
@@ -22,7 +28,7 @@ export default function MainSection() {
         </div>
       </div>
       <div className="col-1 main-card">
-        <img src={'src/img/architecture.png'} alt={'architecture'} />
+        <img src={architecture} alt={'architecture'} />
         <div>
           <div className="architecture-category">ARCHITECTURE</div>
           <div className="category-type">CAVE RESIDENCE</div>
@@ -32,12 +38,12 @@ export default function MainSection() {
           </p>
         </div>
         <div className="learn-more">
-          <img src={'src/img/learn-more-icon.png'} alt={'learn-more'} />
+          <img src={learnMoreIcon} alt={'learn more'} />
           <div>Learn More</div>
         </div>
       </div>
       <div className="col-1 main-card">
-        <img src={'src/img/interior.png'} alt={'interior'} />
+        <img src={interior} alt={'interior'} />
         <div>
           <div className="interior-category">INTERIOR</div>
           <div className="category-type">VEGA COTTAGE</div>
@@ -47,12 +53,12 @@ export default function MainSection() {
           </p>
         </div>
         <div className="learn-more">
-          <img src={'src/img/learn-more-icon.png'} alt={'learn-more'} />
+          <img src={learnMoreIcon} alt={'learn more'} />
           <div>Learn More</div>
         </div>
       </div>
       <div className="col-1 main-card">
-        <img src={'src/img/landscape.png'} alt={'landscape'} />
+        <img src={landscape} alt={'landscape'} />
         <div>
           <div className="landscape-category">Landscape</div>
           <div className="category-type">AGUANTAO HOUSE</div>
@@ -62,7 +68,7 @@ export default function MainSection() {
           </p>
         </div>
         <div className="learn-more">
-          <img src={'src/img/learn-more-icon.png'} alt={'learn-more'} />
+          <img src={learnMoreIcon} alt={'learn more'} />
           <div>Learn More</div>
         </div>
 
@@ -79,7 +85,7 @@ export default function MainSection() {
           <span className="fa fa-chevron-right" aria-hidden="true" />
         </div>
         <div>
-          <img src={'src/img/community_center.png'} alt={'community_center'} />
+          <img src={communityCenter} alt={'community center'} />
         </div>
       </div>
     </div>
